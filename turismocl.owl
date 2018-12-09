@@ -1,0 +1,327 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#"
+     xml:base="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl"
+     xmlns:turismocl="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#PossuiAcomodacao -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#PossuiAcomodacao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Acomodacao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Pacote"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#PossuiAtividade -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#PossuiAtividade">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Pacote"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Atividade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#PossuiCapital -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#PossuiCapital">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#PossuiEstado"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Estado"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Cidade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#PossuiEstado -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#PossuiEstado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Cidade"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Estado"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#PossuiLocal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#PossuiLocal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Acomodacao"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Esporte"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Pacote"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Relaxamento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Cidade"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Estado"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#NomeAcomodacao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#NomeAcomodacao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Acomodacao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#NomeAtividade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#NomeAtividade">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Atividade"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#NomeCidade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#NomeCidade">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Cidade"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#NomeEstado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#NomeEstado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Estado"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#TipoAcomodacao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#TipoAcomodacao">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Acomodacao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Acomodacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Acomodacao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#MinhasClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Atividade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Atividade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#MinhasClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Cidade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Cidade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Estado"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Esporte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Esporte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Atividade"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Relaxamento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Estado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Estado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#MinhasClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#MinhasClasses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#MinhasClasses"/>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Pacote -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Pacote">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#MinhasClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Relaxamento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Relaxamento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Atividade"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#CD1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#CD1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Cidade"/>
+        <PossuiEstado rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#ES1"/>
+        <NomeCidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recife</NomeCidade>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#CD2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#CD2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Cidade"/>
+        <PossuiEstado rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#ES2"/>
+        <NomeCidade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natal</NomeCidade>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Club1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Club1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Esporte"/>
+        <PossuiLocal rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#CD1"/>
+        <NomeAtividade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basquete</NomeAtividade>
+        <NomeAtividade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Futebol</NomeAtividade>
+        <NomeAtividade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Voley</NomeAtividade>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#ES1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#ES1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Estado"/>
+        <PossuiCapital rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#CD1"/>
+        <NomeEstado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pernambuco</NomeEstado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#ES2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#ES2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Estado"/>
+        <PossuiCapital rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#CD2"/>
+        <NomeEstado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rio Grande do Norte</NomeEstado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Hot1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Hot1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Acomodacao"/>
+        <PossuiLocal rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#CD1"/>
+        <NomeAcomodacao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hotel Lua Cheia</NomeAcomodacao>
+        <TipoAcomodacao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hotel</TipoAcomodacao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#PC1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#PC1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Pacote"/>
+        <PossuiAcomodacao rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Hot1"/>
+        <PossuiAtividade rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Club1"/>
+        <PossuiLocal rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#CD1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#PC2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#PC2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Pacote"/>
+        <PossuiAcomodacao rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Pou1"/>
+        <PossuiAtividade rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Spa1"/>
+        <PossuiLocal rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#CD2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Pou1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Pou1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Acomodacao"/>
+        <PossuiLocal rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#CD2"/>
+        <NomeAcomodacao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pousada Vida Longa</NomeAcomodacao>
+        <TipoAcomodacao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pousada</TipoAcomodacao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Spa1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Spa1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#Relaxamento"/>
+        <PossuiLocal rdf:resource="http://www.semanticweb.org/iannaor/ontologies/2018/11/turismocl#CD2"/>
+        <NomeAtividade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Massagem</NomeAtividade>
+        <NomeAtividade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sauna</NomeAtividade>
+        <NomeAtividade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tratamento térmico.</NomeAtividade>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
